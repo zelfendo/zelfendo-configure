@@ -5,7 +5,7 @@
 startup_message of
 #  定义screen的功能键为Ctrl-z。向终端输入Ctrl-Z时应按 Ctrl-Z z。 
 escape ^Oz
-# 屏幕缓冲区 102400 行。
+# 屏幕缓冲区 102400 行。否则占用内存过大
 defscrollback 10240
 # 退出vim自动刷屏
 altscreen on
@@ -24,9 +24,9 @@ hardstatus alwayslastline
 hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} %H(%l) %{..Y} %Y/%m/%d %c:%s "
 # 关闭错误提示
 vbell off
-# 按 Ctrl-o w 或 Ctrl-o Ctrl-W 显示窗口列表
+# 按 Ctrl-z w 或 Ctrl-z Ctrl-W 显示窗口列表
 bind w windowlist -b
 bind ^w windowlist -b
 
-# 默认开启日志
-#deflog on
+# 默认关闭日志,否则屏幕记录都会记下来，文件难于管理
+deflog off
