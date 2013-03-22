@@ -1,3 +1,2 @@
-**关联分值**的公式：
+# Linux下各种配置文件集中管理(自用，不断更新)
 
->![](http://latex.codecogs.com/gif.latex?\dpi{150}score(i,j)=\frac{\sum_{u\in%20users}\sum_{s\in%20Session}f(i_{s,u},j_{s,u})}{\sqrt{uv(j)}}) 
