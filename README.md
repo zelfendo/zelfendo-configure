@@ -2,3 +2,7 @@
 ## .screen
 
 scree的配置文件
+
+## .vim
+
+vim的配置文件
